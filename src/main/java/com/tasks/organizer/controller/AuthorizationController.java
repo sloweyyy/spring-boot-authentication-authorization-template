@@ -12,14 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class AuthorizationController {
 
-    @GetMapping("/user")
-    public ResponseEntity<String> user() {
-        return ResponseEntity.ok("Here is your resource user");
-    }
+  @GetMapping("/user")
+  public ResponseEntity<String> user() {
+    return ResponseEntity.ok("Here is your resource user");
+  }
 
-    @GetMapping("/admin")
-    public ResponseEntity<String> admin() {
-        return ResponseEntity.ok("Here is your resource admin");
-    }
-
+  @GetMapping("/admin")
+  public ResponseEntity<String> admin() {
+    return ResponseEntity.ok("Here is your resource admin");
+  }
 }
